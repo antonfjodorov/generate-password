@@ -3,9 +3,10 @@ Terminal "plugin" to quickly generate cryptographically strong passwords.
 
 ## Installation
 ### Linux
-- Clone repo into some_folder
-- Create symlink to _generatePassword.py_. Place symlink in e.g. `/usr/local/bin` to make it runnable from the command line
-- You will probably have to make _generatePassword.py_ executable `chmod +x`
+- Clone repo into whatever_folder
+- Optional: copy whatever_folder/generatePassword.py to `~/src/` to keep a good folder structure.
+- Make _generatePassword.py_ executable `chmod +x`
+- Create symlink to _generatePassword.py_. To make file runnable from command line, place symlink in `/usr/local/bin`
 
 ### Mac & Win users
 Contact me to add installation instructions here
@@ -23,3 +24,15 @@ Random number generator: [os.urandom(1)](https://docs.python.org/3.4/library/os.
 | 4 |`generatePassword omit asdfghjk1`|`}Oe~Gix={T`|10 chars, excluding specified list of chars|
 
 Other character groups you can omit (like in #3) are _uppercase_, _lowercase_, _digits_ and _special_.
+
+## Todo
+- Copy to clipboard function with import Tkinter
+
+```
+	from Tkinter import Tk
+	r = Tk()
+	r.withdraw()
+	r.clipboard_clear()
+	r.clipboard_append('i can has clipboardz?')
+	r.destroy()
+```
