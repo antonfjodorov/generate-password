@@ -25,6 +25,7 @@ Contact me to add installation instructions here
 | 2 | `generatePassword 20` | `:doAV@YzS18pos:e@.no` | 20 random chars |
 | 3 | `generatePassword --omit uppercase` | `qtpfx-!f5*` | 10 chars, no uppercase chars |
 | 4 | `generatePassword -o asdfghjk1` | `}Oe~Gix={T` | 10 chars, excluding specified list of chars |
-| 4 | `generatePassword -o digits -c 12` | `R/ts!IkMgj'g` | 12 chars, no digits, copied to clipboard |
+| 5 | `generatePassword -o digits -c 12` | `R/ts!IkMgj'g` | 12 chars, no digits, copied to clipboard |
+| 6 | `generatePassword -h` | help section | If you want a deeper explanation |
 
 Other character groups you can omit (like in #3) are _uppercase_, _lowercase_, _digits_ and _special_.
